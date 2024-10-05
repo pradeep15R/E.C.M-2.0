@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+<link rel="stylesheet" href="profile2.css">
+</head>
+<body>  <div class="profile-container">
+    <div class="profile-header">
+        <div id="raj">Profile Picture</div>
+        <input  type="file" accept=".jpeg,.jpg,.png" id="dem" disabled onchange="demo()">
+        <h1>Pradeep Raj</h1>
+        <p>raj@893</p>
+    </div>
+
+    <form id="profile-form">
+        <div class="profile-info">
+            <label for="account-number">Account Number:</label>
+            <input type="text" id="account-number" disabled required>
+
+            <label for="ifsc-code">IFSC Code:</label>
+            <input type="text" id="ifsc-code" disabled required>
+
+            <label for="upi-id">UPI ID:</label>
+            <input type="text" id="upi-id" disabled>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" disabled>
+           
+            
+            <label for="bonus">money : </label> <br>
+            <label for="bonus"> coins : </label> <br>
+        </div>
+
+        <div class="action-buttons">
+            <button type="button" class="edit-profile-btn" onclick="enableFields()">Edit Profile</button>
+            <button type="button" class="change-password-btn">Change Password</button>
+            <button type="button" class="logout-btn"><a href="dup.html">Logout</a></button>
+            <button type="button" class="save-btn" onclick="saveProfile()">Save</button>
+        </div>
+    </form>
+</div>
+
+<script>    
+    // Function to enable the form fields
+    function enableFields() {
+        document.getElementById('account-number').disabled = false;
+        document.getElementById('ifsc-code').disabled = false;
+        document.getElementById('upi-id').disabled = false;
+        document.getElementById('phone').disabled = false;
+        document.getElementById('dem').disabled = false;
+    }
+
+    // Function to save the profile
+    function saveProfile() { 
+        const accountNumber = document.getElementById('account-number').value;
+        const ifsccode = document.getElementById('ifsc-code').value;
+        const upiid = document.getElementById('upi-id').value;
+        alert('Profile saved!\nAccount Number: ' + accountNumber + '\nIFSC Code: ' + ifsccode + '\nUPI ID: ' + upiid);
+    }
+
+    // Function to display the chosen profile picture
+    function demo() {
+        var fileInput = document.getElementById("dem");
+        var file = fileInput.files[0];
+        var box = document.getElementById("raj");
+
+        if (file) {
+            var fileURL = URL.createObjectURL(file);
+            box.style.backgroundImage = "url(" + fileURL + ")";
+        }
+    }
+</script>
+</body>
+</html>

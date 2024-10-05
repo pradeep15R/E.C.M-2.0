@@ -1,0 +1,146 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(90deg, rgb(225, 212, 212) 50%, rgb(195, 188, 188) 50%); */
+    background-size: 100% 100%;
+    animation: slideBackground 4s ease infinite;
+   background-image:url(ma.jpeg);
+ background-repeat:no-repeat;
+    margin: 40px;
+    padding: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+   width: 100%;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@keyframes slideBackground {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.raj1{
+
+    background: linear-gradient(90deg, rgb(209, 209, 215) 50%, rgb(237, 7, 7) 50%);
+    background-size:100% 100%;
+    animation: slideBackground 4s ease infinite; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgb(247, 243, 5);
+    max-width: 400px;
+    width: 100%;
+    
+}
+
+.form-title {
+    text-align: center;
+    color: #111010;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.input-group i {
+    color: #1c1a1a;
+    margin-left: 10px;
+}
+
+
+label {
+    color: #131212;
+    font-weight: bold;
+}
+.login {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #af4261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+.login:hover {
+    background-color: #d9f315;
+    color: #1e1e1f;
+   
+}
+.forgot-link {
+    color: #f1ebec;
+    text-decoration: none;
+    padding-left:12px;
+    
+}
+
+.forgot-link:hover {
+   text-decoration: none;
+   color: #2912da;
+}
+
+.register-link {
+    color: #f3ec78;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.register-link:hover {
+    text-decoration:none;
+
+}
+.ab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.abcd {
+    text-align: center;
+    margin-top: 1rem;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+}

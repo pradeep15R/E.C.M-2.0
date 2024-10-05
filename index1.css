@@ -1,0 +1,155 @@
+
+body {
+    background-image:url(wert-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+display: grid;
+    margin: 0;
+    height:750px;
+}
+.H{
+ display: flex;
+ position: absolute;
+ right:60%;
+ top: 50px;
+ color: rgb(19, 19, 19);
+font-size: 15px;
+}
+.H2{
+    bottom: 50px;
+    position: relative;
+left:-40px;
+    color: #000000;
+    scroll-timeline-name:5px;
+    border: solid;
+    width:140%;
+    height: 60%;
+    border-radius: 35px;
+    
+    
+
+}
+.raj1{
+background-color: #0ac9f9ba;/*
+    /* backdrop-filter: blur(4px); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 25px rgba(237, 72, 7, 0.933); */
+    box-shadow: 0px 0px 20px rgba(277,228,237,0.37);
+    position: absolute;
+    left:55%;
+   
+}
+
+.form-title {
+    text-align: center;
+    color: #0b0b0b;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0eeeefd;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+    color: rgb(14, 14, 14);
+}
+
+.input-group i {
+    color: #101011;
+    margin-left: 10px;
+}
+
+
+label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.login {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f43a15f1;
+    color: rgb(22, 21, 21);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 20px;
+    font-style:initial;
+
+}
+.login:hover {
+    background-color: #f0ed50;
+    color: #141414;
+    font-size: 20px;
+   
+}
+.forgot-link {
+    color: #f5f0f1;
+    text-decoration: none;
+    padding-left: 12px;
+}
+
+.forgot-link:hover {
+    text-decoration:none;
+    color: #90d9ed;
+}
+
+.register-link {
+    color: #f7fb27;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.register-link:hover {
+    text-decoration:none;
+    color: black;
+
+}
+.ab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.abcd {
+    text-align: center;
+    margin-top: 1rem;
+    color: #050505;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+}

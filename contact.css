@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#navbar{
+    background-color:rgb(35, 48, 6);
+    width: 100%;
+    height: 80px;
+    border-color: whitesmoke 3px;
+    border-radius: 2px;
+    margin-right: -90%;
+
+}
+
+
+#bihar{
+    margin: -85px;
+    text-align: center;
+    color: rgb(255, 55, 0);
+}
+
+#bak{
+    width: 90px;
+    height: 25px;
+    border-radius: 10px;
+    background-color:#a2e5e381;
+    color: #171717 ;
+    font-size: larger;
+    text-align: center;
+    border: rgb(244, 157, 82) solid 3px; 
+    position:absolute;
+    right:1px;
+}
+
+#dipa{
+    width: 750px;
+    height: 300px;
+    border: solid 4px  rgb(35, 48, 6);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 450px;
+    top: 180px;
+}
+
+.box1{
+    width: 370px;
+    height: 290px;
+    border: 4px solid  rgb(220, 69, 69);
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+    color:rgb(200, 37, 70)
+}
